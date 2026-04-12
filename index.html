@@ -1,200 +1,238 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>the forth template</title>
-    <link rel="stylesheet" href="css/all-min.css" />
-    <link rel="stylesheet" href="css/master.css" />
-    <script
-      src="https://kit.fontawesome.com/7fff25ecdf.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="main">
-      <nav class="navs">
-        <nav class="left-nav">
-          <p>elzero</p>
-          <ul>
-            <li><a><i class="fa-solid fa-chart-bar"></i></a></li>
-            <li><a><i class="fa-solid fa-gear"></i></a></li>
-            <li><a><i class="fa-solid fa-circle-user"></i></a></li>
-            <li><a><i class="fa-solid fa-share-nodes"></i></i></a></li>
-            <li><a><i class="fa-solid fa-graduation-cap"></i></a></li>
-            <li><a><i class="fa-solid fa-user-group"></i></i></a></li>
-            <li><a><i class="fa-solid fa-file"></i></a></li>
-            <li><a><i class="fa-solid fa-credit-card"></i></a></li>
-          </ul>
-        </nav>
-        <nav class="top-nav">
-          <div class="container">
-            <input placeholder="Type A Keyword" type="search" id="serach-bar">
-            <div class="icons">
-              <i class="fa-regular fa-bell"></i>
-              <i class="fa-solid fa-user"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>the forth template</title>
+  <link rel="stylesheet" href="css/all-min.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <script src="https://kit.fontawesome.com/7fff25ecdf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="main">
+    <nav class="navs">
+      <nav class="left-nav">
+        <p class="logo">elzero</p>
+        <ul>
+          <li val="Dashboard">
+            <a><i class="fa-solid fa-chart-bar"></i></a>
+          </li>
+          <li val="Dashboard"><a><i class="fa-solid fa-gear"></i></a></li>
+          <li val="Settings"><a><i class="fa-solid fa-circle-user"></i></a></li>
+          <li val="Profile"><a><i class="fa-solid fa-share-nodes"></i></i></a></li>
+          <li val="Projects"><a><i class="fa-solid fa-graduation-cap"></i></a></li>
+          <li val="Courses"><a><i class="fa-solid fa-user-group"></i></i></a></li>
+          <li val="Friends"><a><i class="fa-solid fa-file"></i></a></li>
+          <li val="Plans"><a><i class="fa-solid fa-credit-card"></i></a></li>
+        </ul>
+      </nav>
+      <nav class="top-nav">
+        <div class="container">
+          <input placeholder="Type A Keyword" type="search" id="serach-bar">
+          <div class="icons">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+      </nav>
+    </nav>
+    <div class="dashboard">
+      <div class="head">
+        <h1>Dashboard</h1>
+        <hr id="head-hr">
+      </div>
+      <div class="cards">
+        <div class="container">
+          <div class="card">
+            <div class="head">
+              <h2>
+                Welcome
+              </h2>
+              <p>Elzero</p>
+              <img class="back-img" src="worker.png">
+              <img id="logo" src="https://img.freepik.com/premium-vector/user-circle-icon_1076610-46257.jpg" id="logo">
+            </div>
+            <div class="info">
+              <hr>
+              <div class="pairs">
+                <div class="pair">
+                  <h3 class="key">Osama Elzero</h3>
+                  <p class="value">Developer</p>
+                </div>
+                <div class="pair">
+                  <h3 class="key">80</h3>
+                  <p class="value">Projects</p>
+                </div>
+                <div class="pair">
+                  <h3 class="key">$8500</h3>
+                  <p class="value">Earned</p>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <a id="profile-link" href="#">Profile</a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="draft">
+            <div class="head">
+              <h2>Quick Draft</h2>
+              <p>Write A Draft For Your Ideas
+            </div>
+            <div class="form">
+              <form method="post">
+                <input placeholder="title" type="text" name="title">
+                <input id="text-area" type="text" name="thought" placeholder="Your Thought">
+                <button class="submit" type="submit">save</button>
+              </form>
+            </div>
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="target">
+            <div class="head">
+              <h2>Yearly Targets</h2>
+              <p>Targets Of The Year</p>
+            </div>
+            <div class="statiques">
+              <div class="money">
+                <div class="icon-center">
+                  <div class="box"><i class="fa-solid fa-money-bills"></i></div>
+                </div>
+              </div>
+              <div class="percent">
+                <p class="title">Money</p>
+                <p class="total">20.0000DH</p>
+                <div class="bar">
+                  <div class="cursor">80%</div>
+                </div>
+              </div>
+            </div>
+            <div class="statiques">
+              <div class="money">
+                <div class="icon-center">
+                  <div class="box orange"><i class="fa-solid fa-code orange"></i></div>
+                </div>
+              </div>
+              <div class="percent">
+                <p class="title">Projects</p>
+                <p class="total">24</p>
+                <div class="bar per-55">
+                  <div class="cursor per-55">55%</div>
+                </div>
+              </div>
+            </div>
+            <div class="statiques">
+              <div class="money">
+                <div class="icon-center">
+                  <div class="box green"><i class="fa-solid fa-users green"></i></div>
+                </div>
+              </div>
+              <div class="percent">
+                <p class="title">Team</p>
+                <p class="total">12</p>
+                <div class="bar per-75">
+                  <div class="cursor per-75">75%</div>
+                </div>
+              </div>
             </div>
           </div>
-        </nav>
-      </nav>
-      <div class="dashboard">
-        <div class="head">
-          <h1>Dashboard</h1>
-          <hr id="head-hr">
         </div>
-        <div class="cards">
-          <div class="container">
-            <div class="card">
-              <div class="head">
-                <h2>
-                  Welcome
-                </h2>
-                <p>Elzero</p>
-                <img src="https://img.freepik.com/premium-vector/user-circle-icon_1076610-46257.jpg">
-              </div>
-              <div class="info">
-                <hr>
-                <div class="pairs">
-                  <div class="pair">
-                    <h3 class="key">Osama Elzero</h3>
-                    <p class="value">Developer</p>
-                  </div>
-                  <div class="pair">
-                    <h3 class="key">80</h3>
-                    <p class="value">Projects</p>
-                  </div>
-                  <div class="pair">
-                    <h3 class="key">$8500</h3>
-                    <p class="value">Earned</p>
-                  </div>
+        <div class="container">
+          <div class="draft">
+            <div class="head">
+              <h2>Tickets Statistics</h2>
+              <p>Everything About Support Tickets
+            </div>
+            <div class="tickets">
+              <div class="pairs">
+                <div class="ticket">
+                  <i class="fa-solid fa-list-check orange-color"></i>
+                  <p class="quantity">2500</p>
+                  <p class="status">Total</p>
                 </div>
-                <hr>
-              </div>
-              <a id="profile-link" href="#">Profile</a>
-            </div>
-            </div>
-             <div class="container">
-            <div class="card">
-              <div class="head">
-                <h2>
-                  Welcome
-                </h2>
-                <p>Elzero</p>
-                <img src="https://img.freepik.com/premium-vector/user-circle-icon_1076610-46257.jpg">
-              </div>
-              <div class="info">
-                <hr>
-                <div class="pairs">
-                  <div class="pair">
-                    <h3 class="key">Osama Elzero</h3>
-                    <p class="value">Developer</p>
-                  </div>
-                  <div class="pair">
-                    <h3 class="key">80</h3>
-                    <p class="value">Projects</p>
-                  </div>
-                  <div class="pair">
-                    <h3 class="key">$8500</h3>
-                    <p class="value">Earned</p>
-                  </div>
+                <div class="ticket">
+                  <i class="fa-solid fa-spinner blue-color"></i>
+                  <p class="quantity">500</p>
+                  <p class="status">Pending</p>
                 </div>
-                <hr>
               </div>
-              <a id="profile-link" href="#">Profile</a>
-            </div>
-            </div>
-             <div class="container">
-            <div class="card">
-              <div class="head">
-                <h2>
-                  Welcome
-                </h2>
-                <p>Elzero</p>
-                <img src="https://img.freepik.com/premium-vector/user-circle-icon_1076610-46257.jpg">
-              </div>
-              <div class="info">
-                <hr>
-                <div class="pairs">
-                  <div class="pair">
-                    <h3 class="key">Osama Elzero</h3>
-                    <p class="value">Developer</p>
-                  </div>
-                  <div class="pair">
-                    <h3 class="key">80</h3>
-                    <p class="value">Projects</p>
-                  </div>
-                  <div class="pair">
-                    <h3 class="key">$8500</h3>
-                    <p class="value">Earned</p>
-                  </div>
+              <div class="pairs">
+                <div class="ticket">
+                  <i class="fa-regular fa-square-check green-color"></i>
+                  <p class="quantity">1900</p>
+                  <p class="status">Closed</p>
                 </div>
-                <hr>
-              </div>
-              <a id="profile-link" href="#">Profile</a>
-            </div>
-            </div>
-             <div class="container">
-            <div class="card">
-              <div class="head">
-                <h2>
-                  Welcome
-                </h2>
-                <p>Elzero</p>
-                <img src="https://img.freepik.com/premium-vector/user-circle-icon_1076610-46257.jpg">
-              </div>
-              <div class="info">
-                <hr>
-                <div class="pairs">
-                  <div class="pair">
-                    <h3 class="key">Osama Elzero</h3>
-                    <p class="value">Developer</p>
-                  </div>
-                  <div class="pair">
-                    <h3 class="key">80</h3>
-                    <p class="value">Projects</p>
-                  </div>
-                  <div class="pair">
-                    <h3 class="key">$8500</h3>
-                    <p class="value">Earned</p>
-                  </div>
+                <div class="ticket">
+                  <i class="fa-solid fa-ban red-color"></i>
+                  <p class="quantity">100</p>
+                  <p class="status">Deleted</p>
                 </div>
-                <hr>
+                
               </div>
-              <a id="profile-link" href="#">Profile</a>
             </div>
-            </div>
-             <div class="container">
-            <div class="card">
-              <div class="head">
-                <h2>
-                  Welcome
-                </h2>
-                <p>Elzero</p>
-                <img src="https://img.freepik.com/premium-vector/user-circle-icon_1076610-46257.jpg">
-              </div>
-              <div class="info">
-                <hr>
-                <div class="pairs">
-                  <div class="pair">
-                    <h3 class="key">Osama Elzero</h3>
-                    <p class="value">Developer</p>
-                  </div>
-                  <div class="pair">
-                    <h3 class="key">80</h3>
-                    <p class="value">Projects</p>
-                  </div>
-                  <div class="pair">
-                    <h3 class="key">$8500</h3>
-                    <p class="value">Earned</p>
-                  </div>
-                </div>
-                <hr>
-              </div>
-              <a id="profile-link" href="#">Profile</a>
-            </div>
-            </div>
+          </div>
         </div>
+        <div class="container">
+          <div class="news">
+            <h2>Latest News</h2>
+            <div class="section">
+              <div class="subject">
+                <img class="thumbnail" src="yellow.jpg" alt="notfound">
+                <div class="description">
+                  <h3>Created SASS Section</h3>
+                  <p>New SASS Example & Tutorials</p>
+                </div>
+              </div>  
+              <div class="date-release">
+                3 Days Ago
+              </div>
+            </div>
+             <div class="section">
+              <div class="subject">
+                <img class="thumbnail" src="yellow.jpg" alt="notfound">
+                <div class="description">
+                  <h3>Created SASS Section</h3>
+                  <p>New SASS Example & Tutorials</p>
+                </div>
+              </div>  
+              <div class="date-release">
+                3 Days Ago
+              </div>
+            </div>
+             <div class="section">
+              <div class="subject">
+                <img class="thumbnail" src="yellow.jpg" alt="notfound">
+                <div class="description">
+                  <h3>Created SASS Section</h3>
+                  <p>New SASS Example & Tutorials</p>
+                </div>
+              </div>  
+              <div class="date-release">
+                3 Days Ago
+              </div>
+            </div>
+             <div class="section">
+              <div class="subject">
+                <img class="thumbnail" src="yellow.jpg" alt="notfound">
+                <div class="description">
+                  <h3>Created SASS Section</h3>
+                  <p>New SASS Example & Tutorials</p>
+                </div>
+              </div>  
+              <div class="date-release">
+                3 Days Ago
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
-  </body>
+    <input>
+</body>
+
 </html>
